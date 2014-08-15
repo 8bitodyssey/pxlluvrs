@@ -1,0 +1,553 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 - Reset
+2.0 - Typography
+3.0 - Elements
+4.0 - Forms
+5.0 - Navigation
+	5.1 - Links
+	5.2 - Menus
+6.0 - Accessibility
+7.0 - Alignments
+8.0 - Clearings
+9.0 - Widgets
+10.0 - Content
+	10.1 - Posts and pages
+	10.2 - Asides
+	10.3 - Comments
+11.0 - Infinite scroll
+12.0 - Media
+	12.1 - Captions
+	12.2 - Galleries
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+1.0 - Reset
+--------------------------------------------------------------*/
+/* line 12, ../_sass/common/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  border: 0;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+/* line 23, ../_sass/common/_reset.scss */
+html {
+  font-size: 62.5%;
+  /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
+  overflow-y: scroll;
+  /* Keeps page centered in all browsers regardless of content height */
+  -webkit-text-size-adjust: 100%;
+  /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
+  -ms-text-size-adjust: 100%;
+  /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
+}
+
+/* line 31, ../_sass/common/_reset.scss */
+*,
+*:before,
+*:after {
+  /* apply a natural box layout model to all elements; see http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+  -webkit-box-sizing: border-box;
+  /* Not needed for modern webkit but still used by Blackberry Browser 7.0; see http://caniuse.com/#search=box-sizing */
+  -moz-box-sizing: border-box;
+  /* Still needed for Firefox 28; see http://caniuse.com/#search=box-sizing */
+  box-sizing: border-box;
+}
+
+/* line 37, ../_sass/common/_reset.scss */
+body {
+  background: white;
+}
+
+/* line 49, ../_sass/common/_reset.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section {
+  display: block;
+}
+
+/* line 52, ../_sass/common/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 55, ../_sass/common/_reset.scss */
+table {
+  /* tables still need 'cellspacing="0"' in the markup */
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+/* line 59, ../_sass/common/_reset.scss */
+caption, th, td {
+  font-weight: normal;
+  text-align: left;
+}
+
+/* line 64, ../_sass/common/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+}
+
+/* line 67, ../_sass/common/_reset.scss */
+blockquote, q {
+  quotes: "" "";
+}
+
+/* line 70, ../_sass/common/_reset.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/* line 74, ../_sass/common/_reset.scss */
+a:hover,
+a:active {
+  outline: 0;
+}
+
+/* line 77, ../_sass/common/_reset.scss */
+a img {
+  border: 0;
+}
+
+/*--------------------------------------------------------------
+5.0 Navigation
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+5.1 Links
+--------------------------------------------------------------*/
+/* line 13, ../_sass/_navigation.scss */
+a {
+  color: royalblue;
+}
+/* line 18, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+a:visited {
+  color: purple;
+}
+/* line 21, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+a:focus {
+  color: midnightblue;
+}
+/* line 24, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+a:hover {
+  color: midnightblue;
+}
+/* line 27, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+a:active {
+  color: midnightblue;
+}
+
+/*--------------------------------------------------------------
+5.2 Menus
+--------------------------------------------------------------*/
+/* line 53, ../_sass/_navigation.scss */
+.main-navigation {
+  clear: both;
+  display: block;
+  float: left;
+  width: 100%;
+}
+/* line 59, ../_sass/_navigation.scss */
+.main-navigation ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+/* line 65, ../_sass/_navigation.scss */
+.main-navigation li {
+  float: left;
+  position: relative;
+}
+/* line 70, ../_sass/_navigation.scss */
+.main-navigation a {
+  display: block;
+  color: royalblue;
+  text-decoration: none;
+  padding: 0;
+  background: transparent;
+}
+/* line 82, ../_sass/_navigation.scss */
+.main-navigation ul ul {
+  background: transparent;
+  -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+  display: none;
+  float: left;
+  position: absolute;
+  top: 1.5em;
+  left: 0;
+  z-index: 99999;
+}
+/* line 92, ../_sass/_navigation.scss */
+.main-navigation ul ul ul {
+  left: 100%;
+  top: 0;
+}
+/* line 97, ../_sass/_navigation.scss */
+.main-navigation ul ul a {
+  width: 200px;
+  color: royalblue;
+  background: transparent;
+}
+/* line 109, ../_sass/_navigation.scss */
+.main-navigation li:hover > a {
+  color: royalblue;
+  background: transparent;
+}
+/* line 114, ../_sass/_navigation.scss */
+.main-navigation ul ul :hover > a {
+  color: royalblue;
+  background: transparent;
+}
+/* line 122, ../_sass/_navigation.scss */
+.main-navigation ul li:hover > ul {
+  display: block;
+}
+/* line 128, ../_sass/_navigation.scss */
+.main-navigation .current_page_item a,
+.main-navigation .current-menu-item a {
+  color: royalblue;
+  background: transparent;
+}
+
+/* Small menu */
+/* line 136, ../_sass/_navigation.scss */
+.menu-toggle {
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  /* line 145, ../_sass/_navigation.scss */
+  .menu-toggle,
+  .main-navigation.toggled .nav-menu {
+    display: block;
+  }
+
+  /* line 149, ../_sass/_navigation.scss */
+  .main-navigation ul {
+    display: none;
+  }
+}
+/* line 156, ../_sass/_navigation.scss */
+.site-main .comment-navigation,
+.site-main .paging-navigation,
+.site-main .post-navigation {
+  margin: 0 0 1.5em;
+  overflow: hidden;
+}
+
+/* line 162, ../_sass/_navigation.scss */
+.comment-navigation .nav-previous,
+.paging-navigation .nav-previous,
+.post-navigation .nav-previous {
+  float: left;
+  width: 50%;
+}
+
+/* line 168, ../_sass/_navigation.scss */
+.comment-navigation .nav-next,
+.paging-navigation .nav-next,
+.post-navigation .nav-next {
+  float: right;
+  text-align: right;
+  width: 50%;
+}
+
+/*--------------------------------------------------------------
+6.0 Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers */
+/* line 6, ../_sass/common/_accessibility.scss */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  display: none;
+}
+/* line 11, ../_sass/common/_accessibility.scss */
+.screen-reader-text:hover, .screen-reader-text:active, .screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar */
+}
+
+/*--------------------------------------------------------------
+7.0 Alignments
+--------------------------------------------------------------*/
+/* line 6, ../_sass/common/_alignments.scss */
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1.5em;
+}
+
+/* line 11, ../_sass/common/_alignments.scss */
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 1.5em;
+}
+
+/* line 16, ../_sass/common/_alignments.scss */
+.aligncenter {
+  clear: both;
+  display: block;
+  margin: 0 auto;
+}
+
+/*--------------------------------------------------------------
+8.0 Clearings
+--------------------------------------------------------------*/
+/* line 10, ../_sass/common/_clearings.scss */
+.clear,
+.entry-content,
+.comment-content,
+.site-header,
+.site-content,
+.site-footer {
+  *zoom: 1;
+}
+/* line 38, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*--------------------------------------------------------------
+9.0 Widgets
+--------------------------------------------------------------*/
+/* line 5, ../_sass/_widgets.scss */
+.widget {
+  margin: 0 0 1.5em;
+}
+
+/* Make sure select elements fit in widgets */
+/* line 10, ../_sass/_widgets.scss */
+.widget select {
+  max-width: 100%;
+}
+
+/* Search widget */
+/* line 15, ../_sass/_widgets.scss */
+.widget_search .search-submit {
+  display: none;
+}
+
+/*--------------------------------------------------------------
+10.0 Content
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+10.1 Posts and pages
+--------------------------------------------------------------*/
+/* line 11, ../_sass/_content.scss */
+.hentry {
+  margin: 0 0 1.5em;
+}
+
+/* line 15, ../_sass/_content.scss */
+.byline,
+.updated {
+  display: none;
+}
+
+/* line 19, ../_sass/_content.scss */
+.single .byline,
+.group-blog .byline {
+  display: inline;
+}
+
+/* line 24, ../_sass/_content.scss */
+.page-content,
+.entry-content,
+.entry-summary {
+  margin: 1.5em 0 0;
+}
+
+/* line 27, ../_sass/_content.scss */
+.page-links {
+  clear: both;
+  margin: 0 0 1.5em;
+}
+
+/*--------------------------------------------------------------
+10.2 Asides
+--------------------------------------------------------------*/
+/* line 36, ../_sass/_content.scss */
+.blog .format-aside .entry-title,
+.archive .format-aside .entry-title {
+  display: none;
+}
+
+/*--------------------------------------------------------------
+10.3 Comments
+--------------------------------------------------------------*/
+/* line 43, ../_sass/_content.scss */
+.comment-content a {
+  word-wrap: break-word;
+}
+
+/*--------------------------------------------------------------
+11.0 Infinite scroll
+--------------------------------------------------------------*/
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+/* line 7, ../_sass/common/_infinitescroll.scss */
+.infinite-scroll .paging-navigation,
+.infinite-scroll.neverending .site-footer {
+  /* Theme Footer (when set to scrolling) */
+  display: none;
+}
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before */
+/* line 11, ../_sass/common/_infinitescroll.scss */
+.infinity-end.neverending .site-footer {
+  display: block;
+}
+
+/*--------------------------------------------------------------
+12.0 Media
+--------------------------------------------------------------*/
+/* line 13, ../_sass/_media.scss */
+.page-content img.wp-smiley,
+.entry-content img.wp-smiley,
+.comment-content img.wp-smiley {
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0;
+}
+
+/* Make sure embeds and iframes fit their containers */
+/* line 22, ../_sass/_media.scss */
+embed,
+iframe,
+object {
+  max-width: 100%;
+}
+
+/*--------------------------------------------------------------
+12.1 Captions
+--------------------------------------------------------------*/
+/* line 29, ../_sass/_media.scss */
+.wp-caption {
+  border-style: solid;
+  border-color: #cccccc;
+  border-width: 1px;
+  margin-bottom: 1.5em;
+  max-width: 100%;
+}
+
+/* line 38, ../_sass/_media.scss */
+.wp-caption img[class*="wp-image-"] {
+  display: block;
+  margin: 1.2% auto 0;
+  max-width: 98%;
+}
+
+/* line 43, ../_sass/_media.scss */
+.wp-caption-text {
+  text-align: center;
+}
+
+/* line 49, ../_sass/_media.scss */
+.wp-caption .wp-caption-text {
+  margin: 0.8075em 0;
+}
+
+/*--------------------------------------------------------------
+12.2 Galleries
+--------------------------------------------------------------*/
+/* line 56, ../_sass/_media.scss */
+.gallery {
+  margin-bottom: 1.5em;
+}
+
+/* line 59, ../_sass/_media.scss */
+.gallery-item {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  width: 100%;
+}
+
+/* line 65, ../_sass/_media.scss */
+.gallery-columns-2 .gallery-item {
+  max-width: 50%;
+}
+
+/* line 68, ../_sass/_media.scss */
+.gallery-columns-3 .gallery-item {
+  max-width: 33.33%;
+}
+
+/* line 71, ../_sass/_media.scss */
+.gallery-columns-4 .gallery-item {
+  max-width: 25%;
+}
+
+/* line 74, ../_sass/_media.scss */
+.gallery-columns-5 .gallery-item {
+  max-width: 20%;
+}
+
+/* line 77, ../_sass/_media.scss */
+.gallery-columns-6 .gallery-item {
+  max-width: 16.66%;
+}
+
+/* line 80, ../_sass/_media.scss */
+.gallery-columns-7 .gallery-item {
+  max-width: 14.28%;
+}
+
+/* line 83, ../_sass/_media.scss */
+.gallery-columns-8 .gallery-item {
+  max-width: 12.5%;
+}
+
+/* line 86, ../_sass/_media.scss */
+.gallery-columns-9 .gallery-item {
+  max-width: 11.11%;
+}
