@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: pxlluvrs 0.1.0\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tags/pxl\n"
 "POT-Creation-Date: 2014-02-26 01:30:23+00:00\n"
-"PO-Revision-Date: 2014-08-14 22:46+0900\n"
+"PO-Revision-Date: 2014-08-16 01:19+0900\n"
 "Last-Translator: Kazue Igarashi <gatesapce.k@gmail.com>\n"
 "Language-Team: \n"
 "Language: ja\n"
@@ -278,7 +278,7 @@ msgstr "%title <span class=\"meta-nav\">&rarr;</span>"
 
 #: inc/template-tags.php:85
 msgid "<span class=\"posted-on\">Posted on %1$s</span>"
-msgstr "<span class=\"posted-on\">投稿日時: %1$s</span>"
+msgstr "<span class=\"posted-on\">★○%1$s</span>"
 
 #: search.php:16
 msgid "Search Results for: %s"

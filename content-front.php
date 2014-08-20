@@ -12,6 +12,15 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class( $pxl_added_post_classes ); ?>>
 	<div class="entry-box">
 		<a href="<?php the_permalink(); ?>" rel="bookmark">
+			<div class="entry-thumbnail">
+				<?php if ( has_post_thumbnail() ) {
+            the_post_thumbnail();
+          }
+          else {
+            the_post_thumbnail();
+          }
+        ?>
+			</div><!-- .entry-thumbnail -->
 			<header class="entry-header">
 				<?php do_action( 'pxl_before_entry_header' ); ?>
 				<h1 class="entry-title"><?php the_title(); ?></h1>

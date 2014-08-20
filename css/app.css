@@ -8564,3 +8564,8 @@ h2.site-description {
 .home .entry-title {
   font-size: 1.75rem;
 }
+
+/* line 221, ../_sass/app.scss */
+.posted-on {
+  font-family: "GD-DOTFONT-DQ";
+}
